@@ -1,0 +1,26 @@
+#server:
+#  port: 8189
+#  servlet:
+#    context-path: /demo
+jwt:
+  secret: 984hg493gh0439rthr0429uruj2309yh937gc763fe87t3f89723gf
+  lifetime: 10m
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/golive_users
+    username: Deniel
+    password: 1901
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQLDialect
+
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: false
+  main:
+    allow-circular-references: true
